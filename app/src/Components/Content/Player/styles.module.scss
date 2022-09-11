@@ -1,0 +1,60 @@
+.player {
+  display: block;
+  position: relative;
+  max-width: 970px;
+  margin: 0 auto;
+
+  video {
+    width: 620px;
+    height: 370px;
+    margin: 20px auto;
+  }
+
+  .volume {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: calc(50% - 85px);
+    left: calc(50% - 85px);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s linear infinite;
+    color: white;
+    font-weight: bold;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player {
+    .volume {
+      width: 140px;
+      height: 140px;
+      top: calc(50% - 75px);
+      left: calc(50% - 75px);
+    }
+
+    video {
+      width: 95%;
+      height: auto;
+    }
+  }
+}

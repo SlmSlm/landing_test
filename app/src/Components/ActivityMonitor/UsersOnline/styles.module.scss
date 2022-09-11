@@ -1,0 +1,29 @@
+.container {
+  width: 170px;
+
+  .pin {
+    position: absolute;
+    width: 60px;
+    height: 68px;
+    font-size: 1.5em;
+    line-height: 58px;
+    text-align: center;
+    overflow: hidden;
+    background: url(../../../Assets/Images/pinOnline.png) 50% 50% no-repeat;
+    color: #17d4fb;
+  }
+
+  .textContent {
+    margin: 7px 0 0 30px;
+    padding: 5px 5px 5px 35px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px dashed #17d4fb;
+    border-radius: 8px;
+
+    span {
+      color: #17d4fb;
+      font-weight: 600;
+    }
+  }
+}
